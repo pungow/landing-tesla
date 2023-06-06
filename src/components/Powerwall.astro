@@ -1,0 +1,33 @@
+---
+import Section from "./Section.astro";
+---
+
+<Section
+title="Energia solar y Powerwall"
+subtitle="Totalmente electrico"
+color="black">
+<div slot="buttons">
+    <a
+        class="bg-gray-800/90 text-sm rounded font-medium text-white px-12 py-3 justify-center items-center hover:bg-white hover:text-black transition-colors" 
+        href="#"
+    >Mas informacion</a>
+
+    <nav class="flex px-10 items-center absolute bottom-0 w-full z-40">
+        <ul class="flex justify-center w-full text-xs [&>li>a]:text-white [&>li>a]:inline-block [&>li>a]:px-3 [&>li>a]:py-6">
+            <li><a href="./about">Tesla © 2023</a></li>
+            <li><a href="./legal">Privacidad y legal</a></li>
+            <li><a href="./vin-recall-search">Llamadas a revisión de vehículos</a></li>
+            <li><a href="./contact">Contacto</a></li>
+            <li><a href="./blog">Noticias</a></li>
+            <li><a href="./findust/list">Ubicaciones</a></li>
+        </ul>
+    </nav>
+</div>
+
+<img
+    slot="background"
+    src="./powerwall.avif"
+    alt="Model Y"
+    class="h-full w-full object-cover object-center"
+/>
+</Section>

@@ -15,8 +15,10 @@ const textColor = `text-${color}`
                 {subtitle}
             </p>
         </header>
-        <footer class="flex flex-col flex-grow justify-end pb-24">
-            <slot name="buttons"></slot>
+        <footer class="flex flex-col flex-grow justify-end">
+            <div class="py-20">
+                <slot name="buttons"></slot>
+            </div>
         </footer>
     </div>
 
